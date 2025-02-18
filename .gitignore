@@ -1,0 +1,48 @@
+# Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+
+# Visual Studio files
+.vs/
+*.user
+*.userosscache
+*.suo
+*.userprefs
+*.dbmdl
+*.jfm
+*.pfx
+*.publishsettings
+
+# IDE
+.idea/
+.vscode/
+*.sln.iml
+
+# .NET Core
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Dependencies
+packages/
+*.nupkg
+
+# Local configuration
+appsettings.Development.json
+appsettings.Local.json
+
+# Logs
+*.log
+
+# Database
+*.db
+*.sqlite3
+
+# Environment files
+.env
+
