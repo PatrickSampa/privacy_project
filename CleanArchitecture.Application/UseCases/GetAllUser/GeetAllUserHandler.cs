@@ -1,5 +1,6 @@
 ﻿
 using AutoMapper;
+using CleanArchitecture.Application.Shared.Exceptions;
 using CleanArchitectureDomain.Interfaces;
 using MediatR;
 
@@ -21,6 +22,7 @@ namespace CleanArchitecture.Application.UseCases.GetAllUser
         public async Task<List<GetAllUserResponse>> Handle(GetAllUserRequest request, CancellationToken cancellationToken)
         {
             var users = await _userRepository.GetAll(cancellationToken);
+
             return _mapper.Map<List<GetAllUserResponse>>(users);
         }
     }

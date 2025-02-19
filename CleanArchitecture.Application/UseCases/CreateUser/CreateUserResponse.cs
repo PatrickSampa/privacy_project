@@ -4,7 +4,7 @@ namespace CleanArchitecture.Application.UseCases.CreateUser
 {
     public sealed class CreateUserResponse
     {
-        public Guid Guid { get; set; }
+        public Guid Id { get; set; }
 
         public string? Email { get; set; }
 

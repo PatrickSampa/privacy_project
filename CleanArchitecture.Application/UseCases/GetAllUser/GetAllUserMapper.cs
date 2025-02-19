@@ -8,11 +8,11 @@ using CleanArchitectureDomain.Entities;
 
 namespace CleanArchitecture.Application.UseCases.GetAllUser
 {
-    public sealed class GetAllUserMapper : Profile
+  public sealed class GetAllUserMapper : Profile
+  {
+    public GetAllUserMapper()
     {
-        public GetAllUserMapper() 
-        {
-            CreateMap<User, GetAllUserResponse>();
-        }
+      CreateMap<User, GetAllUserResponse>();
     }
+  }
 }
