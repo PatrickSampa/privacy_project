@@ -7,10 +7,8 @@ using CleanArchitectureDomain.Entities;
 
 namespace CleanArchitectureDomain.Interfaces
 {
-  public interface IUserRepository : IBaseRepository<User>
+  public interface IPostRepository : IBaseRepository<Post>
   {
-    Task<User?> GetByEmail(string email, CancellationToken cancellationToken);
-
-    Task<User?> GetByCpf(string cpf, CancellationToken cancellationToken);
+    Task<Post?> GetByIdUser(Guid Id, CancellationToken cancellationToken);
   }
 }

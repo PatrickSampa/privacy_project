@@ -30,8 +30,9 @@ namespace CleanArchitecture.Application.UseCases.UpdateUser
     {
       var user = await _userRepository.Get(request.Id, cancellationToken) ?? throw new ExceptionErro("ID não existe");
 
-      _mapper.Map(request, user); 
-      _userRepository.Update(user); 
+
+      _mapper.Map(request, user);
+      _userRepository.Update(user);
 
       await _unitOfWork.Commit(cancellationToken);
 

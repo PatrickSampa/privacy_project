@@ -11,12 +11,12 @@ namespace CleanArchtecture.Persistence.Repositories
     {
     }
 
-    public async Task<User> GetByCpf(string cpf, CancellationToken cancellationToken)
+    public async Task<User?> GetByCpf(string cpf, CancellationToken cancellationToken)
     {
       return await Context.Set<User>().FirstOrDefaultAsync(x => x.Cpf == cpf, cancellationToken);
     }
 
-    public async Task<User> GetByEmail(string email, CancellationToken cancellationToken)
+    public async Task<User?> GetByEmail(string email, CancellationToken cancellationToken)
     {
       return await Context.Set<User>().FirstOrDefaultAsync(x => x.Email == email, cancellationToken);
     }
